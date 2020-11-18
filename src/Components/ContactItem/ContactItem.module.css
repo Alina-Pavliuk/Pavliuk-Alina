@@ -1,0 +1,84 @@
+
+.contactItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0 10px 0;
+  max-width: 640px;
+  transition: transform 350ms cubic-bezier(0.2, 0, 0.1, 1);
+  width: 612px;
+  height: 85px;
+  border: 1px solid darkgray;
+  box-shadow: 3px 2px 4px;
+  align-items: center;
+  padding: 0 15px 0 15px;
+ 
+}
+
+.contactItem:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.listItemEnterActive {
+  animation: task 800ms ease-in alternate-reverse;
+}
+
+.listItemExitActive {
+  animation-duration: 800ms;
+  animation-name: hinge;
+}
+
+@keyframes task {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+@keyframes hinge {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-800px);
+  }
+}
+
+
+.removeBtn {
+  display: block;
+  background: none;
+  border: none;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 10px;
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  color: white;
+  background-image: linear-gradient(47.73deg, rgb(23, 169, 226) 15.48%, rgb(82, 236, 203) 81.25%);
+
+}
+
+.removeBtn:hover {
+  cursor: pointer;
+  border: none;
+  box-shadow: 4px 3px 4px darkgray;
+background: rgb(248, 55, 7);
+}
+
+.paragraph {
+  margin: 0;
+}

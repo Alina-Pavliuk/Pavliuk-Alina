@@ -1,0 +1,90 @@
+.wrapper {
+  padding-left: 40px;
+}
+
+.formButton {
+  display: block;
+}
+
+.title {
+  font-weight: 700;
+  font-size: 55px;
+  color:rgb(23, 169, 226)
+}
+
+.titleEnterActive {
+  animation: task 800ms ease-in alternate-reverse;
+}
+
+@keyframes task {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+
+.contactsList {
+  font-size: 40px;
+  font-weight: 500;
+  color: rgb(7, 2, 51);
+  display: block;
+  list-style: none;
+  padding: 0;
+  font-style: italic;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .alertBox {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    background-image: linear-gradient(47.73deg, rgb(241, 26, 11) 15.48%, rgb(232, 248, 11) 81.25%);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+  border: 2px double rgb(119, 4, 4);
+  box-shadow: 5px 5px 5px dimgray;
+  }
+
+  .alertBoxEnterActive {
+    animation: task 800ms ease-in alternate-reverse;
+}
+
+.alertBoxExitActive {
+  animation-duration: 800ms;
+  animation-name: hinge;
+}
+@keyframes task {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-200px);
+  }
+}
+@keyframes hinge {
+  0% {
+    transform: translateX(0);
+  }
+  30% {
+    opacity: 0.7;
+    transform: translateX(30px);
+  }
+  100% {
+    opacity: 0.3;
+    transform: translateX(-800px);
+  }
+}
+  
