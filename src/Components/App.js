@@ -101,7 +101,7 @@ class App extends Component {
           {filteredContacts.map(contact =>
             <CSSTransition
               key={contact.id}
-              timeout={700}
+              timeout={800}
               classNames={{
                 enterActive: styles.listItemEnterActive,
                 exitActive: styles.listItemExitActive,
